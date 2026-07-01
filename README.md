@@ -1,5 +1,7 @@
 # Trabalho 2 - Estudo de Caixa de Som Inteligente com Assistente Virtual
 
+## Integrantes do Grupo:
+
 Atyrson Souto da Silva - 251005945
 
 Caio Venâncio do Rosário - 231027195
@@ -23,6 +25,13 @@ customizado baseado em ESP
 
 [Texto completo da descrição do produto](1-descricao-produto.md)
 
+<figure>
+      <figcaption style="text-align: center;">Figura 1 - Imagem do amazon echo, a primeira caixa de som inteligente (2014)</figcaption>
+    <img src="images/amazonecho.png" alt="Figura 1 - Imagem do amazon echo, a primeira caixa de som inteligente (2014)" style="width:100%;">
+    <figcaption>Fonte: iFixit (2014).</figcaption>
+</figure>
+
+
 ## 2 Análise Técnica
 
 Esta parte apresenta a Análise Técnica do projeto, estruturada para detalhar a engenharia interna de um assistente de voz sob duas perspectivas: a arquitetura comercial de referência do Amazon Echo. Ao longo desta seção, serão examinados os quatro pilares fundamentais do sistema: o Módulo de Áudio e Captura, que abrange desde a digitalização do som via barramento I2S até algoritmos de cancelamento de eco (AEC) e detecção de voz (VAD); o Módulo de Controle e Nuvem, que explica o fluxo híbrido de processamento de comandos através do Alexa Voice Service (AVS) e o uso de skills; os Protocolos e Redes Críticas, detalhando as estratégias de comunicação de baixa latência como conexões multiplexadas, WebSockets e redes IoT (MQTT e Matter); e, por fim, a gestão de Sistemas Operacionais e Energia, que aborda o isolamento de processos e a eficiência no consumo energético durante o monitoramento passivo e ativo do dispositivo.
@@ -38,6 +47,12 @@ equivalentes compatíveis com o ecossistema ESP-IDF, a lógica de gerenciamento
 do firmware e o diagrama em blocos do sistema.
 
 [Texto completo da proposta de implementação](3-proposta-implementacao.md)
+
+<figure>
+      <figcaption style="text-align: center;">Esquemático dos componentes do sistema com Esp32</figcaption>
+    <img src="images/esquematicoembarcado.png" alt="Diagrama do fluxo de processamento do áudio embarcado" style="width:100%;">
+    <figcaption>Fonte: DIY Pocket Size ESP32 AI Voice Assistant With Xiao (Instructables, 2026).</figcaption>
+</figure>
 
 ## 4 Pesquisa bibliográfica
 
