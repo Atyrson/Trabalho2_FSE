@@ -51,4 +51,6 @@ Esta seção de Comparativo apresenta um estudo mercadológico e tecnológico co
 
 [Texto completo do comparativo](5-comparativo.md)
 
+---
+
 ### Referências Bibliográficas
