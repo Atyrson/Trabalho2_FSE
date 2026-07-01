@@ -28,9 +28,11 @@ experiência interativa do projeto.
 O firmware será estruturado usando o framework **ESP-ADF** ( _ESP Audio
 Development Framework_ ), que roda sobre o FreeRTOS nativo do ESP-IDF.
 
-```
-Figura X – Diagrama do fluxo de processamento do áudio embarcado
-```
+<figure>
+      <figcaption style="text-align: center;">Diagrama do fluxo de processamento do áudio embarcado</figcaption>
+    <img src="images/diagramaaudioembarcado.png" alt="Diagrama do fluxo de processamento do áudio embarcado" style="width:100%;">
+    <figcaption></figcaption>
+</figure>
 
 O processo se inicia com uma tarefa prioritária do FreeRTOS, que lê
 continuamente os buffers DMA (Direct Memory Access) do driver I2S acoplado ao
@@ -49,12 +51,13 @@ bruto), a tarefa de saída entra em ação: uma fila gerencia a decodificação 
 e injeta os dados de volta nos buffers DMA do canal I2S de saída, reproduzindo a
 resposta sonora no amplificador MAX98357A.
 
-```
-Figura X – Esquemático dos componentes do sistema com Esp
-```
-```
-Fonte: DIY Pocket Size ESP32 AI Voice Assistant With Xiao (Instructables, 2026).
-```
+<figure>
+      <figcaption style="text-align: center;">Esquemático dos componentes do sistema com Esp32</figcaption>
+    <img src="images/esquematicoembarcado.png" alt="Diagrama do fluxo de processamento do áudio embarcado" style="width:100%;">
+    <figcaption>Fonte: DIY Pocket Size ESP32 AI Voice Assistant With Xiao (Instructables, 2026).</figcaption>
+</figure>
+
+
 ### 3.4 Desafios de Software e Integração
 
 **Sobrecarga de Rede e Latência Wi-Fi:** O Echo original utiliza o protocolo

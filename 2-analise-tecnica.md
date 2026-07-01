@@ -126,8 +126,11 @@ subsistemas. Após autenticado, o Echo mantém um canal contínuo para envio de
 eventos, transmissão de áudio e recebimento de respostas, caracterizando uma
 arquitetura cliente-servidor baseada em processamento distribuído.
 
-
-Fonte: artigo https://arxiv.org/pdf/2102.
+<figure>
+      <figcaption style="text-align: center;"></figcaption>
+    <img src="images/arquiteturaamazon.png" alt="" style="width:100%;">
+    <figcaption>Fonte: artigo https://arxiv.org/pdf/2102.</figcaption>
+</figure>
 
 O mecanismo de _wake word_ funciona como a etapa inicial de interação entre
 o usuário e o Amazon Echo. Em estado normal de operação, o dispositivo
@@ -181,9 +184,11 @@ back-end hospedado pela Alexa, AWS ou servidores externos. Esse serviço
 processa a solicitação e retorna uma resposta para o AVS, que converte o resultado
 em áudio e o envia de volta ao Echo para reprodução ao usuário.
 
-```
-fonte: https://developer.amazon.com/pt-BR/alexa/alexa-skills-kit
-```
+<figure>
+      <figcaption style="text-align: center;"></figcaption>
+    <img src="images/arquiteturaskills.png" alt="" style="width:100%;">
+    <figcaption>Fonte: https://developer.amazon.com/pt-BR/alexa/alexa-skills-kit</figcaption>
+</figure>
 
 ### 2.3 Protocolos e Redes Críticas
 
@@ -199,7 +204,6 @@ residenciais requer protocolos otimizados para tempo real que minimizem o
 _overhead_ de cabeçalhos.
 
 #### 2.3.2 Infraestrutura HTTP/2 e SPDY
-
 
 Conforme evidenciado nos estudos de engenharia reversa de Schönherr et al.
 (2020), o ecossistema Amazon Echo mitiga a latência estabelecendo uma **conexão

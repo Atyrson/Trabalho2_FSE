@@ -40,6 +40,7 @@ voz, assim como os dispositivos Echo já proporcionam, mas com a flexibilidade e
 customização que nossa implementação JARVIS na ESP32 pode oferecer.
 
 <figure>
+      <figcaption style="text-align: center;">Figura 1 - Imagem do amazon echo, a primeira caixa de som inteligente (2014)</figcaption>
     <img src="images/amazonecho.png" alt="Figura 1 - Imagem do amazon echo, a primeira caixa de som inteligente (2014)" style="width:100%;">
     <figcaption>Fonte: iFixit (2014).</figcaption>
 </figure>
@@ -69,6 +70,7 @@ gerenciador de energia integrado. Compreender essa arquitetura complexa e como
 as placas interagem entre si é o que permite reparos eficientes.
 
 <figure>
+      <figcaption style="text-align: center;">Figura 1 - Amazon Echo original (2014) desmontado</figcaption>
     <img src="images/amazonechoteardown.png" alt="Figura 1 - Imagem do Amazon echo original (2014) desmontado" style="width:100%;">
     <figcaption>Fonte: iFixit (2014).</figcaption>
 </figure>
