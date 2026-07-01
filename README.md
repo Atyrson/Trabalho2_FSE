@@ -54,3 +54,36 @@ Esta seção de Comparativo apresenta um estudo mercadológico e tecnológico co
 ---
 
 ### Referências Bibliográficas
+
+ATOMIC14. DIY Alexa. GitHub, [s.d.]. Disponível em: https://github.com/atomic14/diy-alexa. Acesso em: 30 jun. 2026.
+UNIVERSIDADE TECNOLÓGICA FEDERAL DO PARANÁ (UTFPR). [Documento disponível no Repositório Institucional UTFPR]. Disponível em: https://repositorio.utfpr.edu.br/jspui/handle/1/36445. Acesso em: 30 jun. 2026.
+
+DIGIKEY. A Comparison of Digital PDM and I2S Interfaces in MEMS Microphones. DigiKey, [s.d.]. Disponível em: https://www.digikey.com.br/en/articles/a-comparison-of-digital-pdm-and-i2s-interfaces-in-mems-microphones. Acesso em: 30 jun. 2026.
+
+EASY ELEC MODULE. A Complete Guide to the INMP441 I2S Microphone. [s.d.]. Disponível em: https://easyelecmodule.com/a-complete-guide-to-the-inmp441-i2s-microphone/. Acesso em: 30 jun. 2026.
+
+CDEBYTE. [Artigo técnico sobre dispositivos embarcados]. [s.d.]. Disponível em: https://www.cdebyte.com/news/1247. Acesso em: 30 jun. 2026.
+
+INSTRUCTABLES. ESP32 Voice Assistant With Gemini AI. [s.d.]. Disponível em: https://www.instructables.com/ESP32-Voice-Assistant-With-Gemini-AI/. Acesso em: 30 jun. 2026.
+
+INSTRUCTABLES. DIY Pocket Size ESP32 AI Voice Assistant With Xiao. [s.d.]. Disponível em: https://www.instructables.com/DIY-Pocket-Size-ESP32-AI-Voice-Assistant-With-Xiao/. Acesso em: 30 jun. 2026.
+
+IFIXIT. Amazon Echo Teardown. 2014. Disponível em: https://pt.ifixit.com/Teardown/Amazon+Echo+Teardown/33953?lang=en. Acesso em: 30 jun. 2026.
+
+AMAZON. Customer Service – Alexa Help. Disponível em: https://digprjsurvey.amazon.co.uk/csad/help/node/G201602230?theme=light. Acesso em: 30 jun. 2026.
+
+FERRONI, G.; et al. A Low-Complexity Architecture for Keyword Spotting. arXiv, 2020. Disponível em: https://arxiv.org/pdf/2008.00508. Acesso em: 30 jun. 2026.
+
+MORO, D.; et al. A Survey of Keyword Spotting Systems. arXiv, 2021. Disponível em:https://arxiv.org/abs/2201.03386. Acesso em: 30 jun. 2026.
+
+ZHANG, Y.; SUDA, N.; LAI, L.; CHANDRA, V. Hello Edge: Keyword Spotting on Microcontrollers. arXiv preprint, 2021. Disponível em: https://arxiv.org/abs/1711.07128. Acesso em: 30 jun. 2026.
+
+AMAZON. Alexa Skills Kit. Disponível em: https://developer.amazon.com/pt-BR/alexa/alexa-skills-kit. Acesso em: 30 jun. 2026.
+AMAZON. Echo – Technical Details. Disponível em: https://www.amazon.com/. Acesso em: 30 jun. 2026.
+
+GOOGLE. Nest Mini (2nd Gen) Specifications. Disponível em: https://support.google.com/googlehome/answer/7072284?hl=pt-BR. Acesso em: 30 jun. 2026.
+
+APPLE. HomePod mini – Tech Specs. Disponível em: https://www.apple.com/homepod-mini/. Acesso em: 30 jun. 2026.
+LI, Yanyan; KIM, Sara; SY, Eric. A survey on Amazon Alexa attack surfaces. [S.l.]: arXiv, 2021. Disponível em: https://arxiv.org/pdf/2102.11442. Acesso em: 30 jun. 2026.
+
+JANAK, Jan et al. An analysis of Amazon Echo's network behavior. [S.l.]: arXiv, 2021. Disponível em: https://arxiv.org/pdf/2105.13500. Acesso em: 30 jun. 2026.
