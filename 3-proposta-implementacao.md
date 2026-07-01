@@ -17,6 +17,7 @@ de 24 bits para o barramento I2S da ESP32, enquanto na reprodução de áudio
 emprega-se o amplificador I2S MAX98357A, um amplificador de classe D que
 recebe o stream digital I2S direto da ESP32 e faz a conversão e amplificação direta
 para um alto-falante de até 3.2W.
+
 Como interface física "estilo JARVIS", o sistema conta ainda com uma tela
 OLED 0.98" (I2C) para renderizar a interface de ondas e animações características
 do assistente, completando o conjunto de sensores e atuadores que dão vida à
@@ -37,10 +38,12 @@ microfone INMP441. Em seguida, esses dados de áudio em tempo real passam pelo
 algoritmo de detecção de atividade de voz (VAD) e pelo modelo local leve da
 Espressif (WakeNet), especialmente treinado para reconhecer o termo de ativação
 “JARVIS”.
+
 Uma vez que o sistema é ativado por esse comando, o áudio captado é
 imediatamente encapsulado em pacotes TCP/UDP e enviado via Wi-Fi para um
 backend de processamento de linguagem natural, podendo também ser tratado de
 forma local caso se trate de uma automação simples.
+
 Por fim, ao receber a resposta de áudio sintetizada (como áudio PCM ou MP
 bruto), a tarefa de saída entra em ação: uma fila gerencia a decodificação do stream
 e injeta os dados de volta nos buffers DMA do canal I2S de saída, reproduzindo a

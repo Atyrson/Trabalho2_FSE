@@ -39,12 +39,11 @@ motoras ou visuais controlem seu ambiente físico exclusivamente por comandos de
 voz, assim como os dispositivos Echo já proporcionam, mas com a flexibilidade e
 customização que nossa implementação JARVIS na ESP32 pode oferecer.
 
-Figura X - Imagem do amazon echo, a primeira caixa de som inteligente (2014)
+<figure>
+    <img src="images/amazonecho.png" alt="Figura 1 - Imagem do amazon echo, a primeira caixa de som inteligente (2014)" style="width:100%;">
+    <figcaption>Fonte: iFixit (2014).</figcaption>
+</figure>
 
-
-```
-Fonte: Ifixit (2014)
-```
 ### 1.2 Descrição do Hardware
 
 A iFixit, maior comunidade global de reparos, desmontou completamente o
@@ -54,12 +53,14 @@ dispositivo. Ao democratizar essas informações, a plataforma capacita os usuá
 consertarem seus próprios aparelhos com segurança. Isso prolonga a vida útil dos
 produtos, combate o lixo eletrônico e reforça a missão da iFixit de promover a
 independência do consumidor.
+
 Na base do dispositivo fica a placa de alimentação e áudio, gerenciando a
 energia e o som com componentes da Texas Instruments. O regulador TPS
 estabiliza a tensão, enquanto o codec TLV320DAC3203 converte o áudio digital em
 analógico de forma eficiente. O amplificador TPA3110D2 impulsiona o alto-falante
 com até 15W e baixa distorção. Mapear a função de cada um desses chips é
 essencial para facilitar o diagnóstico de falhas e a substituição precisa de peças.
+
 A placa-mãe atua como o cérebro do Echo, comandada pelo processador
 DM3725CUS100, que gerencia a inteligência do sistema. A estrutura conta com 256
 MB de RAM da Samsung, 4 GB de armazenamento flash da SanDisk e um módulo
@@ -67,13 +68,11 @@ Wi-Fi/Bluetooth da Qualcomm para conectividade. Tudo é orquestrado por um
 gerenciador de energia integrado. Compreender essa arquitetura complexa e como
 as placas interagem entre si é o que permite reparos eficientes.
 
-```
-Figura X - Imagem do Amazon echo original (2014) desmontado
-```
+<figure>
+    <img src="images/amazonechoteardown.png" alt="Figura 1 - Imagem do Amazon echo original (2014) desmontado" style="width:100%;">
+    <figcaption>Fonte: iFixit (2014).</figcaption>
+</figure>
 
-```
-Fonte: iFixit (2014).
-```
 No topo do Echo encontra-se a placa de microfones e LEDs, responsável pela
 interface de interação. Ela dispõe de sete microfones em círculo, apoiados por
 conversores analógico-digitais que garantem a clareza dos comandos de voz em
@@ -95,7 +94,6 @@ sobre um processador ARM Cortex-A8 de 1GHz, dedicando continuamente cerca de
 50% de todo o seu tempo de CPU para o processo de reconhecimento da palavra de
 ativação. Essa tarefa de escuta passiva permanente é gerenciada pelo daemon local
 denominado ASRD ( _Automatic Speech Recognition Daemon_ ), que utiliza o motor
-
 
 _Pryon_ , desenvolvido a partir do kit de ferramentas de código aberto _Kaldi_. O modelo
 acústico executado localmente é baseado em Redes Neurais Profundas (DNN) e

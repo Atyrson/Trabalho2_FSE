@@ -83,6 +83,7 @@ Adicionalmente, a evolução da captura de voz é notável: a transição de arr
 simples para matrizes complexas de 3 a 4 microfones de campo distante reflete a
 necessidade de resolver o desafio da filtragem espacial (Beamforming) diretamente
 no hardware.
+
 Neste espectro de mercado, a proposta do assistente JARVIS baseado no
 ESP32-WR posiciona-se como um dispositivo de borda ( _edge node_ ) _open-source_ de
 entrada. Com um processador Xtensa Dual-Core de apenas 240MHz e rede Wi-Fi 4

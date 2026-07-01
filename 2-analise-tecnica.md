@@ -107,6 +107,7 @@ processados e encaminhados para serviços externos. Dessa forma, as conclusões
 apresentadas buscam representar o funcionamento do sistema com base em
 evidências públicas e observáveis, sem assumir acesso ao código-fonte ou à
 implementação interna da plataforma.
+
 A arquitetura do Amazon Echo (1ª geração) segue um modelo híbrido entre
 processamento embarcado e serviços em nuvem. O dispositivo realiza localmente
 funções relacionadas à captura e codificação de áudio, controle de estados do
@@ -115,6 +116,7 @@ ASRD, que utiliza o mecanismo Pryon para identificar a wake word configurada. J�
 recursos de reconhecimento de fala, compreensão de linguagem natural e síntese
 de voz são disponibilizados pelo Alexa Voice Service (AVS), serviço executado na
 infraestrutura em nuvem da Amazon.
+
 A comunicação entre o Echo e o AVS ocorre por meio de uma conexão
 persistente mantida entre o dispositivo e um endpoint dedicado da Amazon
 utilizando o protocolo SPDY. Durante o estabelecimento da conexão, o dispositivo
@@ -126,6 +128,7 @@ arquitetura cliente-servidor baseada em processamento distribuído.
 
 
 Fonte: artigo https://arxiv.org/pdf/2102.
+
 O mecanismo de _wake word_ funciona como a etapa inicial de interação entre
 o usuário e o Amazon Echo. Em estado normal de operação, o dispositivo
 permanece escutando continuamente o ambiente até identificar a palavra de
@@ -134,6 +137,7 @@ o processamento do comando de voz, evitando que todo o áudio ambiente seja
 enviado continuamente para os servidores. Quando a ativação ocorre, o Echo passa
 a registrar o comando do usuário e inicia o envio do áudio ao serviço em nuvem
 responsável pelo processamento da solicitação.
+
 Após a ativação, o fluxo de processamento é transferido para o Alexa Voice
 Service (AVS), que executa funções de reconhecimento automático de fala (ASR),
 compreensão de linguagem natural (NLU) e geração da resposta por síntese de voz
@@ -149,6 +153,7 @@ servidores executam uma etapa adicional de verificação da ativação recebida.
 Confirmada a ativação, o AVS (Automatic Speech Recognition) realiza
 reconhecimento automático de fala, convertendo o áudio enviado pelo dispositivo em
 uma representação textual do comando do usuário.
+
 Com o texto obtido, o Alexa Voice Service aplica mecanismos de
 compreensão de linguagem natural, ou Natural Languange Understanding (NLU)
 para interpretar a solicitação recebida e determinar uma resposta apropriada. Em
@@ -156,7 +161,6 @@ seguida, o serviço utiliza síntese de voz TTS (Text-to-Speech) para gerar a re
 em formato de áudio, que é enviada ao dispositivo para reprodução. Após concluir a
 reprodução, o Echo informa o término da execução ao serviço em nuvem,
 encerrando o ciclo de interação entre dispositivo embarcado e infraestrutura remota.
-
 
 As _skills_ do Amazon Alexa funcionam como aplicações externas que ampliam
 as funcionalidades disponíveis no Amazon Echo. O Echo atua principalmente como
@@ -167,6 +171,7 @@ execute tarefas adicionais além das funções nativas do sistema, como consulta
 informações, controlar serviços externos ou interagir com aplicações específicas.
 Dessa forma, o Echo não executa diretamente a lógica dessas aplicações, mas atua
 como intermediário entre o usuário e os serviços remotos.
+
 O processamento da skill ocorre fora do dispositivo, na infraestrutura de
 nuvem. Após receber o áudio enviado pelo Echo, o Alexa Voice Service (AVS)
 realiza reconhecimento de fala e interpretação do comando com base no modelo de
